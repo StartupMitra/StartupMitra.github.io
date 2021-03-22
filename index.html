@@ -9,29 +9,9 @@
 		<meta name="author" content="">
 		<title>StartupMi- Dashboard</title>
 		<style type="text/css">
-			.navbar nav{
-				background-color: #f1eeee;
-			}
-			.nav-link{
-				font-size: 1.2rem;
-			}
-			.navbar-brand{
-				font-size: 1.5rem;
-			}
-			li a{
-				color:black;
-			}
-			.navbar-brand{
-				color: black;
-			}
-			#toalign{
-				align-self: center;
-			}
-			#jabya{
-				background-color: white;
-			}
 		</style>
 		  <!-- Custom fonts for this template-->
+		<link rel="stylesheet" type="text/css" href="css/a.css">
 		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 		  <!-- Page level plugin CSS-->
 		<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
@@ -39,40 +19,32 @@
 		<link href="css/sb-admin.css" rel="stylesheet">
 	</head>
 	<body class="page-top" style="background-color: #f1eeee">
-		<!--<div class="jumbotron mb-0">
-			<br>
-			<div class="col-md-6">
-				<h2 style="text-align: center;">Welcome to the Startup Mitra!</h2>
-			</div>
-		</div>-->
 		<div class="conatainer">
 			<nav class="navbar navbar-expand  static-top" style="background-color: #f1eeee;">
-			<span><a class="nav-link" href="#"><img src="Site Images/BrandLogo1.jpg" class="img-fluid"></a></span>
-			<a class="navbar-brand" href="#">StartupMi</a>
-			<!--<button class="btn btn-outline-danger" data-taggle="navbar-collapse" data-target="#myCol">></button>-->
-			<!--NAVBAR-->	
-    		<div class="collapse navbar-collapse" id="myCol">
-				<ul class="navbar-nav ml-auto">
-					<li class="navbar-nav nav-item mr-4 md-1">
-						<a class="nav-link" href="entrepreneurDesk.html">Entrepreneur Desk</a>
-
-					</li>
-					<li class="navbar-nav nav-item mr-4 md-1">
-						
-						<a class="nav-link" href="investorDesk.html">Investor Desk</a>
-					</li>
-					<li class="navbar-nav nav-item mr-4 md-1">
-						<a class="nav-link" href="contact.html">Connect</a>
-					</li>
-					<li class="navbar-nav nav-item mr-4 md-1">
-						<a class="nav-link" href="aboutUs.html">Signup</a>
-					</li>
-					<a class="btn btn-success " href="signup.html" style="background-color: #9370DB;"><span>Get Started</span></a>
-				</ul>
-			</div>
-		</nav>
+				<span>
+					<a class="nav-link" href="#"><img src="Site Images/BrandLogo1.jpg" class="img-fluid"></a>
+				</span>
+				<a class="navbar-brand" href="#">StartupMi</a>	
+    			<div class="collapse navbar-collapse" id="#myCol">
+					<ul class="navbar-nav ml-auto">
+						<li class="navbar-nav nav-item mr-4 md-1">
+							<a class="nav-link" href="entrepreneurDesk.html">Entrepreneur Desk</a>
+						</li>
+						<li class="navbar-nav nav-item mr-4 md-1">
+							<a class="nav-link" href="investorDesk.html">Investor Desk</a>
+						</li>
+						<li class="navbar-nav nav-item mr-4 md-1">
+							<a class="nav-link" href="contact.html">Connect</a>
+						</li>
+						<li class="navbar-nav nav-item mr-4 md-1">
+							<a class="nav-link" href="aboutUs.html">Signup</a>
+						</li>
+						<a class="btn btn-success " href="signup.html" style="background-color: #9370DB;"><span>Get Started</span></a>
+					</ul>
+				</div>
+			</nav>
 		</div>
-		<div class="conatainer mr-6 mb-5">
+		<div class="conatainer-fluid mr-6 mb-5">
 			<div class="row py-3">			
 				<div class="col-md-6">
 					<br>
@@ -121,7 +93,11 @@
               								<label><input type="checkbox" value="remember-me">Remember Password</label>
             						</div>
           						</div>
-          						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a id="toalign" class="btn btn-primary btn-md" href="userAccount.html" style="background-color: #9370DB;">Sign in</a>
+          						<div class="row py-3 justify-content-center">
+          							<div class="col-md-4">
+          								<a id="toalign" class="btn btn-primary btn-block" href="userAccount.html" style="background-color: #9370DB;">Sign in</a>
+          							</div>
+          						</div>
         					</form>
         					<div class="text-center">
         						<br>
@@ -131,8 +107,7 @@
     				</div>
 				</div>
 			</div>
-		</div>
-		<div class="conatainer-fluid">
+		
 			<div class="jumbotron" id="jabya">
 				<h1 style="text-align: center;">The NEXT LEVEL Colaboration Platform!</h1>
 				<p style="font-size: 1.4rem;text-align: center;">
@@ -164,8 +139,7 @@
 				<h1 style="text-align: center;">We Are the "StartUpMi!"</h1>
 				
 			</div>
-		</div>
-		<div class="conatainer-fluid">
+		
 			<div class="row py-3">
 				<div class="col-md-6">
 				<img src="Site Images/entreprenuer2.jpg" class="img-fluid">
@@ -180,8 +154,7 @@
 						</p>
 				</div>
 			</div>
-		</div>
-		<div class="conatainer-fluid">
+		
 			<div class="jumbotron" id="jabya">
 				<div class="conatainer-fluid">
 					<div class="row py-3">
@@ -200,9 +173,8 @@
 					</div>
 				</div>
 			</div>
-		</div>		
-		<div class="conatainer-fluid">
-			<div class="row py-3">
+		
+			<div class="row py-3 justify-content-center">
 				<div class="col-md-6">
 				<img src="Site Images/connect.jpg" class="img-fluid">
 			</div>
@@ -222,8 +194,14 @@
 					<h1 style="text-align: center;font-size: 1.9rem;">Startups</h1>
 				</div>
 				<div class="row py-3 justify-content-center">
-					<div class="col-md-6 shadow">
-						<div class="carousel slide" data-ride="carousel">
+					<div class="col-md-6 bg-danger shadow">
+						<div id="slider" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#slider" data-slide-to="0" class="active"></li>
+								<li data-target="#slider" data-slide-to="1" </li>
+								<li data-target="#slider" data-slide-to="2"></li>
+								<li data-target="#slider" data-slide-to="3"></li>
+							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="Main" id="Main">
@@ -329,7 +307,13 @@
 										</div>
 									</div>
 								</div>
-							</div>		
+							</div>
+							<a href="#slider" class="carousel-control-prev" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a href="#slider" class="carousel-control-next" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>		
 						</div>
 					</div>
 				</div>
