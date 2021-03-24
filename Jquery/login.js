@@ -1,11 +1,17 @@
 
     $(document).ready(function(){
+      
+      $('#alert').hide()
+      $('#error').hide()
+              
 
-        $('#submit').click(function(){
+        $('#signin').click(function(){
           
-            username=$('#username').val()
-            password=$('#password').val()
-            user_data={"firstName":username,"lastName":password}
+            
+          /*inputEmail inputPassword signin  these are the ids of html dom elemts for login */             
+            username=$('#inputEmail').val()
+            password=$('#inputPassword').val()
+            user_data={"username":username,"password":password}
             
      
             var settings = {
@@ -24,8 +30,20 @@
                  
               });
 
-              alert("hey") 
-              alert(settings.data)  //returned data from server  settig.data
+               if(username=="rushi" & password=="rushi")
+              {
+                window.location.href = 'https://startupmitra.github.io/getstarted.html'
+              }  
+              else{
+                $('#alert').show()
+                $('#error').show()
+              }
+
+              //inputEmail
+              //inputPassword
+              //signin
+              
+             // alert(settings.data)  //returned data from server  settig.data
              
               
               
