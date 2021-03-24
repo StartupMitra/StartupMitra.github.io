@@ -24,6 +24,10 @@
                  
               });
 
+              /* if(username=="rushi" & password=="rushi")
+              {
+                window.location.href = 'https://startupmitra.github.io/getstarted.html'
+              }  */
               alert("hey") 
               alert(settings.data)  //returned data from server  settig.data
              
