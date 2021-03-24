@@ -1,11 +1,13 @@
 
     $(document).ready(function(){
 
-        $('#submit').click(function(){
-          
-            username=$('#username').val()
-            password=$('#password').val()
-            user_data={"firstName":username,"lastName":password}
+        $('#signin').click(function(){
+              
+            
+          /*inputEmail inputPassword signin  these are the ids of html dom elemts for login */             
+            username=$('#inputEmail').val()
+            password=$('#inputPassword').val()
+            user_data={"username":username,"password":password}
             
      
             var settings = {
@@ -28,6 +30,10 @@
               {
                 window.location.href = 'https://startupmitra.github.io/getstarted.html'
               }  */
+
+              //inputEmail
+              //inputPassword
+              //signin
               alert("hey") 
               alert(settings.data)  //returned data from server  settig.data
              
