@@ -1,8 +1,12 @@
 
     $(document).ready(function(){
+      
+      $('#alert').hide()
+      $('#error').hide()
+              
 
         $('#signin').click(function(){
-              
+          
             
           /*inputEmail inputPassword signin  these are the ids of html dom elemts for login */             
             username=$('#inputEmail').val()
@@ -26,16 +30,20 @@
                  
               });
 
-              /* if(username=="rushi" & password=="rushi")
+               if(username=="rushi" & password=="rushi")
               {
                 window.location.href = 'https://startupmitra.github.io/getstarted.html'
-              }  */
+              }  
+              else{
+                $('#alert').show()
+                $('#error').show()
+              }
 
               //inputEmail
               //inputPassword
               //signin
-              alert("hey") 
-              alert(settings.data)  //returned data from server  settig.data
+              
+             // alert(settings.data)  //returned data from server  settig.data
              
               
               
