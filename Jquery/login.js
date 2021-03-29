@@ -30,8 +30,10 @@
                 
                
                  response["token"];
-                 sessionStorage.setItem("token", response["token"]);
-                 if(sessionStorage.getItem("token")=="invalid user")
+                 //sessionStorage.setItem("token", response["token"]);
+
+                 //if(sessionStorage.getItem("token")=="invalid user")
+                 if(response["token"]=="invalid user")
                  {
                   $('#alert').show()
                   $('#error').show()
@@ -41,8 +43,12 @@
                  else{
                    
                   //window.location.href = "http://stackoverflow.com";
-                  alert(sessionStorage.getItem("token"))
-                  $('#inputEmail').val(sessionStorage.getItem("token"))
+                  //alert(sessionStorage.getItem("token"))
+                  alert(response["token"])
+                  $('#inputEmail').val(response["token"])
+                  $('#alert').hide()
+                  $('#error').hide()
+                  
                  }
                  
                   });
