@@ -1,6 +1,7 @@
 
     $(document).ready(function(){
-      
+
+     
       $('#alert').hide()
       $('#error').hide()
               
@@ -15,7 +16,7 @@
             
      
             var settings = {
-                "url": "http://127.0.0.1:5000/post",
+                "url": "http://127.0.0.1:5000/login",
                 "method": "POST",
                 "timeout": 0,
                 "headers": {
@@ -26,27 +27,25 @@
               };
               
               $.ajax(settings).done(function (response) {
-                console.log(response);
+                
+               
+                 response["token"];
+                 sessionStorage.setItem("token", response["token"]);
+                 if(sessionStorage.getItem("token")=="invalid user")
+                 {
+                  $('#alert').show()
+                  $('#error').show()
+                  
+                  
+                 }
+                 else{
+                   
+                  //window.location.href = "http://stackoverflow.com";
+                  alert(sessionStorage.getItem("token"))
+                  $('#inputEmail').val(sessionStorage.getItem("token"))
+                 }
                  
-              });
-
-               if(username=="rushi" & password=="rushi")
-              {
-                window.location.href = 'https://startupmitra.github.io/getstarted.html'
-              }  
-              else{
-                $('#alert').show()
-                $('#error').show()
-              }
-
-              //inputEmail
-              //inputPassword
-              //signin
-              
-             // alert(settings.data)  //returned data from server  settig.data
-             
-              
-              
+                  });
 
               });
 
