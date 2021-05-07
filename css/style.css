@@ -93,7 +93,7 @@
 }
 
 header{
-	background: #fff;
+	background: #f1eeee;
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 1.5rem;
@@ -156,7 +156,7 @@ main{
 
 	margin-top: 85px;
 	padding: 2rem 1.5rem; 
-	background: #f1f5f9;
+	background: #f1eeee;
 	min-height: calc(100vh - 90px);
 }
 
