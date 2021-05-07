@@ -19,7 +19,7 @@
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #DD2F6E;
+	background:#9370DB;
 	z-index: 100;
 	transition: width 300ms;
 }
@@ -98,7 +98,7 @@ header{
 	justify-content: space-between;
 	padding: 1rem 1.5rem;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-	position: fixed;
+	position: fixed;;
 	left: 345px;
 	width: calc(100% - 345px);
 	top:0;
@@ -177,7 +177,7 @@ main{
 
 .card-single div:last-child span{
 	font-size: 3rem;
-	color: #DD2F6E;
+	color: #9370DB;
 }
 
 .card-single div:first-child span{
@@ -185,7 +185,7 @@ main{
 }
 
 .card-single:last-child{
-	background:#DD2F6E;
+	background:#9370DB;
 }
 
 .card-single:last-child h1,
@@ -218,7 +218,7 @@ main{
 }
 
 .card-header button{
-	background: #DD2F6E;
+	background: #9370DB;
 	border-radius: 10px;
 	color: #fff;
 	font-size: .8rem;
@@ -374,8 +374,8 @@ tr td:last-child{
 		background:#DD2F6E;
 		padding-left: 0rem; 
 		margin-right: 1rem;
-		height: 40px;
-		width: 40px;
+		height: 32px;
+		width: 32px;
 		border-radius: 50%;
 		color: #fff;
 		display: flex;
