@@ -118,7 +118,12 @@ form .btn input{
 	background: #9370db;
 }
 @media only screen and (max-width: 560px){
+	
+	.Compcard{
+		width: calc(100% - 20px);
+	}
 	.container form .user-details .input-box{
+		
 		width:100%;
 	}
 }
