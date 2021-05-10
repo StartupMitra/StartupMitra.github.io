@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
         
-       $("#div1").hide();
-      // $('#div2').css('padding-top','-299%')
-      $("#div2").css({top: 8,position:'absolute'});
+       $("#div2").hide();
+       $("#div2").css({top: 4,position:'absolute'});
        $('#save').click(function(){
         
         
