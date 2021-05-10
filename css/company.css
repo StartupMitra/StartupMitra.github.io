@@ -5,12 +5,45 @@ main{
 	padding: 10px;
 	margin-bottom:0;
 }
+.Compcard{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap:2rem;
+	margin-top: 1rem;
+	position: absolute;
+	max-width: 700px;
+	width:100%;
+	border-radius: 10px;
+	height: 100px;
+	margin-bottom: 120px;
+	
+}
+.status{
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 2px;
+}
+.status .dispStat{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 18px;
+	background: green;
+	color: bold #fff;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
 .container{
+	margin-top: 150px;
 	max-width:700px;
 	width: 100%;
 	background: #fff;
 	padding: 25px 30px;
 	border-radius: 5px;
+	position: relative;
 } 
 
 .container .title{
