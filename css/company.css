@@ -4,6 +4,7 @@ main{
 	justify-content: center;
 	padding: 10px;
 	margin-bottom:0;
+	background: #fff;
 }
 .Compcard{
 	display: grid;
