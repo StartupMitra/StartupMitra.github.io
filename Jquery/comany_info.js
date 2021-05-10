@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
         
-       $("#hide").hide();
+       $("#div1").hide();
+      // $('#div2').css('padding-top','-299%')
+      $("#div2").css({top: 8,position:'absolute'});
        $('#save').click(function(){
-          
+        
         
 
         username="rushikesh"   
