@@ -1,8 +1,11 @@
 $(document).ready(function(){
 
+        
+       $("#hide").hide();
        $('#save').click(function(){
           
-          
+        
+
         username="rushikesh"   
         title= $('#title').val() 
         website=$('#website').val()
@@ -15,6 +18,7 @@ $(document).ready(function(){
         total_raising=$('#total_raising').val()
         total_raised=$('#total_raised').val()
         minimum_investment=$('#minimum_investment').val()
+        status=$('#save').val()
        
          
                  
@@ -32,6 +36,7 @@ $(document).ready(function(){
             "total_raising":total_raising,
             "total_raised":total_raised,
             "minimum_investment":minimum_investment
+            
         }
    
           var settings = {
