@@ -1,11 +1,40 @@
 $(document).ready(function(){
-
-        
+       
+       
+       $("#div1").hide();
        $("#div2").hide();
        $("#div2").css({top: 4,position:'absolute'});
-       $('#save').click(function(){
+         
         
+        user_data={"title":"fdfd"}
+        var settings = {
+          "url": "http://127.0.0.1:5000/check_status",
+          "method": "POST",
+          "timeout": 0,
+          "headers": {
+          
+            "Content-Type": "application/json"
+          },
+          "data": JSON.stringify(user_data),
+        };
         
+        $.ajax(settings).done(function (response) {
+          
+
+        if(response["status"]=="complet")
+           {
+            $("#div1").show();
+            }
+       
+           else{
+            $("#div2").show();
+          }
+           });
+           
+         
+   
+         $('#save').click(function(){
+         
 
         username="rushikesh"   
         title= $('#title').val() 
@@ -65,14 +94,12 @@ $(document).ready(function(){
                else{
                    alert("error")
                }
-                
-               
-               
-                      });
+                 });
                 
              });
            
 
              
     });
+  
     
