@@ -47,13 +47,37 @@ main{
 	position: relative;
 } 
 
-.container .title{
+.container .titlecomp{
 	font-size: 25px;
 	font-weight: 500;
 	position: relative;
 }
 
-.container .title::before{
+.container .titlepitch{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titleteam{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titleiv{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titleplan{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titlecomp::before{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -64,6 +88,27 @@ main{
 	transition:all 0.3s ease;
 }
 
+.container .titlepitch::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 80px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
+.container .titleteam::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 120px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
 .container form .user-details{
 	display: flex;
 	flex-wrap: wrap;
