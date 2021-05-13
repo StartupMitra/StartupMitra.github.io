@@ -127,7 +127,7 @@ main{
 	left: 0;
 	bottom: 0;
 	height: 3px;
-	width: 185px;
+	width: 170px;
 	background: green !important;
 	transition:all 0.3s ease;
 }
@@ -281,6 +281,63 @@ form button{
 }
 
 /*Team.htlm ends here!*/
+
+/*Plans css started from here*/
+
+.card-body .plan-details{
+	margin-top:1rem; 
+	margin-left: 35%;
+	height: 100px;
+	width: 200px;
+	align-items: center;
+	background: orangered;
+	margin-bottom:1rem;
+	text-align: center;
+	box-shadow: 2px 2px 3px grey;
+	border-radius:10px;
+
+}
+.card-body .plan-details:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	color:#fff;
+}
+.card-body .plan-details .span{
+	display: block;
+	justify-content: center;
+	padding:1rem .5rem;
+	margin:1rem;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+
+}
+
+.card-body .book-btn{
+	display: block;
+	justify-content: center;
+	text-align: center;
+	margin-top: 2rem;
+	margin-left: 32%;
+	height: 50px;
+	width: 250px;
+	margin-bottom: 1rem;
+	box-shadow: 3px  grey;
+	//font-size: 20px;
+	//font-weight: 500;
+}
+.card-body .book-btn span{
+	font-size: 20px;
+	font-weight: 700;
+	color: black;
+}
+.card-body .book-btn:hover, span:hover{
+	opacity: 90%;
+	color: #fff;
+	cursor: pointer;
+
+}
+/*Plans Ends here!*/
 .card{
 	margin-top: 1rem;
 }
@@ -307,5 +364,13 @@ form button{
 		margin-top: 1rem;
 	}
 
+	.card-body .plan-details{
+		margin-left: 23%;
+	}
 
+	.card-body .book-btn{
+		margin-bottom: 2rem;
+		margin-left: 40%;
+		width:75px;
+	}
 }
