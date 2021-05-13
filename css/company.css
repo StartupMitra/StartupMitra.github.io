@@ -365,7 +365,10 @@ form button{
 	}
 
 	.card-body .plan-details{
+		display: flex;
+		justify-content: center;
 		margin-left: 23%;
+		height: 300px;
 	}
 
 	.card-body .book-btn{
