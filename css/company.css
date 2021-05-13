@@ -367,13 +367,13 @@ form button{
 	.card-body .plan-details{
 		display: flex;
 		justify-content: center;
-		margin-left: 20%;
+		margin-left: 11.5%;
 		height: 300px;
 	}
 
 	.card-body .book-btn{
 		margin-bottom: 2rem;
-		margin-left: 37.8%;
+		margin-left: 35%;
 		width:75px;
 	}
 }
