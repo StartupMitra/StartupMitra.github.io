@@ -109,6 +109,29 @@ main{
 	background: green !important;
 	transition:all 0.3s ease;
 }
+
+.container .titleiv::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 160px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
+.container .titleplan::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 185px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
 .container form .user-details{
 	display: flex;
 	flex-wrap: wrap;
@@ -258,6 +281,9 @@ form button{
 }
 
 /*Team.htlm ends here!*/
+.card{
+	margin-top: 1rem;
+}
 
 @media only screen and (max-width: 560px){
 	
@@ -277,6 +303,9 @@ form button{
 		width: 100%;
 	}
 
+	.card{
+		margin-top: 1rem;
+	}
 
 
 }
