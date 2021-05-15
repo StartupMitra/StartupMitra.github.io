@@ -2,7 +2,7 @@ $(document).ready(function(){
        
        
        $("#div1").hide();
-       $("#div2").hide();
+       //$("#div2").hide();
        $("#div2").css({top: 4,position:'absolute'});
          
         
