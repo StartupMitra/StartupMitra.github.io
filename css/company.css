@@ -47,20 +47,88 @@ main{
 	position: relative;
 } 
 
-.container .title{
+.container .titlecomp{
 	font-size: 25px;
 	font-weight: 500;
 	position: relative;
 }
 
-.container .title::before{
+.container .titlepitch{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titleteam{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titleiv{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titleplan{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+
+.container .titlecomp::before{
 	content: '';
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	height: 3px;
-	width: 30px;
-	background: #dddadf;
+	width: 40px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
+.container .titlepitch::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 80px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
+.container .titleteam::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 120px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
+.container .titleiv::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 160px;
+	background: green !important;
+	transition:all 0.3s ease;
+}
+
+.container .titleplan::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 170px;
+	background: green !important;
 	transition:all 0.3s ease;
 }
 
@@ -98,19 +166,60 @@ form .user-details .input-box{
 .user-details .input-box input:valid, select:valid{
 	border-color: #9b59b6; 
 }
+//pitch htmls css
 
-form .btn{
+
+.container form .summary{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin:20px 0 12px 0;
+}
+
+form .summary .input-box{
+	margin-bottom: 1.5rem;
+	width: calc(100% / 1 - 20px);
+}
+
+.summary .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.summary .input-box textarea, select{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border-radius: 1px solid #ccc;
+	padding-left: 15px;
+	padding-right: 10px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+
+.summary .input-box textarea:focus, select:focus
+.summary .input-box textarea:valid, select:valid{
+	border-color: #9b59b6; 
+}
+
+//############################
+
+
+
+form button{
 	display: flex;
 	justify-content: center;
-	height: 3rem;
+	height: 4rem;
 	margin:4rem 0;
 
 
 }
 
-form .btn input{
+form button{
 	height: 100%;
-	width: 20%;
+	width: 30%;
 	outline: none;
 	color: #fff;
 	border: none;
@@ -118,6 +227,121 @@ form .btn input{
 	border-radius: 5px;
 	background: #9370db;
 }
+
+/*Team.html styling is here*/
+.card{
+	border:1px solid grey;
+}
+ .logo-div img{
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.logo-div img{
+	width:120px; 
+	height:120px;
+}
+.photo{
+	display: flex;
+	align-items: center;
+}
+.file{
+	margin-top:50px;
+	font-weight: 500;
+	font-size: 18px;
+	height: 50px;
+}
+
+.team-member .card-body .input-box{
+	margin-bottom: 1.5rem;
+	width: calc(100% / 1 - 20px);
+}
+
+.card-body .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.card-body .input-box input, select{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border-radius: 1px solid #ccc;
+	padding-left: 15px;
+	padding-right: 10px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+
+.card-body .input-box input:focus, select:focus
+.card-bodyx .input-box input:valid, select:valid{
+	border-color: #9b59b6; 
+}
+
+/*Team.htlm ends here!*/
+
+/*Plans css started from here*/
+
+.card-body .plan-details{
+	margin-top:1rem; 
+	margin-left: 35%;
+	height: 100px;
+	width: 200px;
+	align-items: center;
+	background: orangered;
+	margin-bottom:1rem;
+	text-align: center;
+	box-shadow: 2px 2px 3px grey;
+	border-radius:10px;
+
+}
+.card-body .plan-details:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	color:#fff;
+}
+.card-body .plan-details .span{
+	display: block;
+	justify-content: center;
+	padding:1rem .5rem;
+	margin:1rem;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+
+}
+
+.card-body .book-btn{
+	display: block;
+	justify-content: center;
+	text-align: center;
+	margin-top: 2rem;
+	margin-left: 32%;
+	height: 50px;
+	width: 250px;
+	margin-bottom: 1rem;
+	box-shadow: 3px  grey;
+	//font-size: 20px;
+	//font-weight: 500;
+}
+.card-body .book-btn span{
+	font-size: 20px;
+	font-weight: 700;
+	color: black;
+}
+.card-body .book-btn:hover, span:hover{
+	opacity: 90%;
+	color: #fff;
+	cursor: pointer;
+
+}
+/*Plans Ends here!*/
+.card{
+	margin-top: 1rem;
+}
+
 @media only screen and (max-width: 560px){
 	
 	.Compcard{
@@ -126,5 +350,30 @@ form .btn input{
 	.container form .user-details .input-box{
 		
 		width:100%;
+	}
+	.container form .user-details .input-box textarea{
+		margin-top:1rem;
+		width: 100%;
+	}
+	form button{
+		margin-top: 2rem;
+		width: 100%;
+	}
+
+	.card{
+		margin-top: 1rem;
+	}
+
+	.card-body .plan-details{
+		display: flex;
+		justify-content: center;
+		margin-left: 11.5%;
+		height: 300px;
+	}
+
+	.card-body .book-btn{
+		margin-bottom: 2rem;
+		margin-left: 35%;
+		width:75px;
 	}
 }
