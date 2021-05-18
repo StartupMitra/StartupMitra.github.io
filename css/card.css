@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+	:root{
+		--main-color:#DD2F6E;
+		--color-dark:#1D2231;
+		--text-grey: #8390A2;
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		list-style-type: none;
+		text-decoration: none;
+		font-family: 'Poppins', sans-serif;
+		color: #000;
+	}    
+
+	header{
+		background: #f1eeee;
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 1.5rem;
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+		position: fixed;
+		width: 100%;
+		top:0;
+		z-index: 100;
+		transition: left 300ms;
+		
+	}
+
+
+	header  .brand{
+		display: inline-block;
+		justify-content:space-between;
+		align-items: center;
+		padding-top: .8rem;
+		font-size: 25px;
+		font-style: inherit;
+		font-weight: 800;
+		font-family: 'Pacifico', cursive;
+		color:#000;
+		opacity: .6;
+	}
+
+	header .head-l{
+		display: flex;
+		justify-content: space-between;
+	}
+	header .head-l .list{
+		padding: 1rem;
+	}
+
+	.head-l .list .link:hover{
+			
+			opacity: 1;
+			color: #000;
+			font-weight: 600;
+	}
+
+	.user-wrapper{
+		display: flex;
+		align-items: center;
+	}
+
+	.user-wrapper img{
+		border-radius: 50%;
+		margin-right: 1rem;
+	}
+
+	.user-wrapper small{
+		display: inline-block;
+		color: #8390A2;
+	}
+
+	main{
+		margin-top: 89px;
+		padding: 2rem 1.5rem; 
+		background: #fff;
+		min-height: calc(100vh - 89px);
+		min-width: 100vh;
+		background: #fff;
+		opacity: .8;
+	}
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-gap: 2rem;
+		margin-top:1rem;
+		height: 600px;
+		width: 1200px;
+		position:absolute;
+		margin-bottom: 1rem;
+	}
+
+	.grid .main-Image{
+		max-width:100%;
+		max-height: 100%;
+	}
+
+	.main-Image h1{
+		font-family: 'Pacifico', cursive;
+		letter-spacing: 1px;
+		font-weight: 500;
+	}
+	.main-Image h3{
+		letter-spacing: 3px;
+	}
+
+	.grid .main-Card{
+		display: grid;
+		justify-content: center;
+		max-width: 400px;
+		max-height:500px;
+		//border: 1px solid grey;
+	}
+
+	.main-Card .card{
+		margin:2rem;
+		padding: 1rem;
+		width: 350px;
+		border: 1px solid grey;
+		border-radius: 10px;
+		background: #fff;
+		color: black;
+		box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+	}
+
+	.card .card-header{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 1rem; 
+		margin-bottom: 1rem;
+		border-bottom: 1px solid grey;	
+	}
+
+	.card-header .compImage .im1{
+
+		height: 50px;
+		width: 50px;
+		border:1px solid grey;
+		border-radius: 50%;
+	}
+
+	.card-header .compTitle{
+		padding-left: .6rem;
+		width:100%;
+		font-size: 15px;
+	}
+
+	.card .card-body{ 
+		padding: 2rem;
+		width: 300px;
+		height: 300px;
+
+	}
+
+	.card-body .thumbnail{
+		max-height: 100%;
+		max-width: 100%;
+		//object-fit: cover;	
+		object-fit:contain;
+	}
+
+	.card-body .thumbnail:hover{
+		opacity: 90%
+	}
+
+	
+
+	.card .card-footer{
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 1rem 0rem 1rem;
+		padding: 1rem 1rem 0rem 1rem;
+		border-top: 1px solid grey;
+	}
+
+	.card-footer button{
+		width:60px;
+		height: 30px;
+		background: #9370DB;
+		font-size: 18px;
+		color: black;
+		cursor: pointer;
+		border: none;
+	}
+
+	.card-footer button:hover{
+		opacity: .9;
+		color:#fff;
+	}
+
+	@media only screen and (max-width: 1400px){
+		.grid{
+			
+			grid-template-columns: repeat(3,1fr) !important;
+			display: grid;
+			justify-content: space-between;	
+			
+		}
+	}
+
+	@media only screen and (max-width: 960px){
+		.grid{
+			
+			grid-template-columns: repeat(3,1fr) !important;
+			display: grid;
+			justify-content: space-between;	
+			
+		}
+	}
+
+	@media only screen and (max-width: 768px){
+		.div1 .head-l{
+			display: none;
+		}		
+		.grid{
+			display: grid;
+			align-items: center;
+			grid-template-columns: repeat(2,1fr) !important;	
+			width:100%;
+			margin-bottom: 1rem;
+			position: absolute;
+		}
+	}
+
+	@media only screen and (max-width: 560px){
+		.div1 .head-l{
+			display: none;
+		}
+		.grid{
+			display: grid;
+			justify-content: center;
+			width: calc(100% / 1 - 20px);
+			grid-template-columns: repeat(1,1fr) !important;	
+			
+		}
+	}
