@@ -1,4 +1,6 @@
 $(document).ready(function(){
+   user=sessionStorage.getItem("username")
+   $('#user').text(user)
        
     $('#save').click(function(){
         alert($('#logo').val())
