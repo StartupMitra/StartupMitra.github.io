@@ -12,6 +12,7 @@
 		list-style-type: none;
 		text-decoration: none;
 		font-family: 'Poppins', sans-serif;
+		color: #000;
 	}    
 
 	header{
@@ -173,6 +174,21 @@
 		margin: 1rem 1rem 0rem 1rem;
 		padding: 1rem 1rem 0rem 1rem;
 		border-top: 1px solid grey;
+	}
+
+	.card-footer button{
+		width:60px;
+		height: 30px;
+		background: #9370DB;
+		font-size: 18px;
+		color: black;
+		cursor: pointer;
+		border: none;
+	}
+
+	.card-footer button:hover{
+		opacity: .9;
+		color:#fff;
 	}
 
 	@media only screen and (max-width: 1400px){
