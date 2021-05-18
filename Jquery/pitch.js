@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+   user=sessionStorage.getItem("username")
+   $('#user').text(user)
+   
        
     $('#save').click(function(){
         alert("hello pitch")
@@ -42,6 +46,7 @@ user_data= {
             {
                alert("data submitted succesfully")
                $('#save').val("saved")
+               
             }
          else {
              alert("Data registration is failed")

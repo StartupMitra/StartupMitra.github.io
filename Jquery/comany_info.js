@@ -1,6 +1,8 @@
 $(document).ready(function(){
+      
        
-       
+  user=sessionStorage.getItem("username")
+  $('#user').text(user)
        $("#div1").hide();
        //$("#div2").hide();
        $("#div2").css({top: 4,position:'absolute'});
@@ -36,7 +38,7 @@ $(document).ready(function(){
          $('#save').click(function(){
          
 
-        username="rushikesh"   
+        username=user
         title= $('#title').val() 
         website=$('#website').val()
         country=$('#country').val()    
@@ -86,6 +88,7 @@ $(document).ready(function(){
                {
                   alert("data sumittd")
                   $('#save').val("saved")
+                  
                }
             else if(response["result"]==0){
                 alert("Please Enter Unique Titile")
