@@ -2,7 +2,7 @@ $(document).ready(function(){
       
        
   user=sessionStorage.getItem("username")
-  $('#user').text(user)
+ /* $('#user').text(user)
        $("#div1").hide();
        //$("#div2").hide();
        $("#div2").css({top: 4,position:'absolute'});
@@ -32,7 +32,7 @@ $(document).ready(function(){
             $("#div2").show();
           }
            });
-           
+   */        
          
    
          $('#save').click(function(){
@@ -50,7 +50,9 @@ $(document).ready(function(){
         total_raising=$('#total_raising').val()
         total_raised=$('#total_raised').val()
         minimum_investment=$('#minimum_investment').val()
-        status=$('#save').val()
+
+        sessionStorage.setItem("title",title);
+        //status=$('#save').val()
        
          
                  
@@ -83,11 +85,13 @@ $(document).ready(function(){
             };
             
             $.ajax(settings).done(function (response) {
+              alert("done")
 
             if(response["result"]==1)
                {
                   alert("data sumittd")
                   $('#save').val("saved")
+                  
                   
                }
             else if(response["result"]==0){

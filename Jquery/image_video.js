@@ -1,12 +1,13 @@
 $(document).ready(function(){
    user=sessionStorage.getItem("username")
+   session_title=sessionStorage.getItem("title")
    $('#user').text(user)
        
     $('#save').click(function(){
         alert($('#logo').val())
         
        
-     title="Calendar" 
+     title=session_title
      logo=$('#logo').val()
      banner=$('#banner').val()    
      ppt=$('#ppt').val() 

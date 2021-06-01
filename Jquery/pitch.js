@@ -2,23 +2,19 @@ $(document).ready(function(){
 
    user=sessionStorage.getItem("username")
    $('#user').text(user)
-   
+   session_title=sessionStorage.getItem("title")
+  
        
     $('#save').click(function(){
-        alert("hello pitch")
-       
-     title="Calendar" 
-     short_summary=$('#short_summary').val()
-     business=$('#business').val()    
-     market=$('#market').val() 
-     progress=$('#progress').val()
-     future=$('#future').val()
-     
-    
       
-              
-     
-user_data= {
+      title=session_title
+      short_summary=$('#short_summary').val()
+      business=$('#business').val()    
+      market=$('#market').val() 
+      progress=$('#progress').val()
+      future=$('#future').val()
+        alert("hello pitch")
+       user_data= {
          "title":title,
          "short_summary":short_summary,
          "business":business,
