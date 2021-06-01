@@ -29,12 +29,13 @@
               $.ajax(settings).done(function (response) {
                 
                
-                 response["token"];
+                 //response["token"];
                  
-
+                  //salert(response['token'])
                  //if(sessionStorage.getItem("token")=="invalid user")
-                 if(response["token"]=="invalid user")
+                 if(response["token"]=="n")
                  {
+                   
                   $('#alert').show()
                   $('#error').show()
                   
