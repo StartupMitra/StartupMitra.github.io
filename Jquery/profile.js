@@ -14,7 +14,24 @@ $(document).ready(function(){
     }
 
     var profile_name=getUrl()['profile']
+    data={"profile_name":profile_name}
     alert(profile_name)
+
+    var settings = {
+        "url": "http://127.0.0.1:5000/entreprenuer_profile",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+        
+          "Content-Type": "application/json"
+        },
+        "data": JSON.stringify(data),
+      };
+      
+      
+      $.ajax(settings).done(function (response) {
+    
+       });
     
       });
    
