@@ -35,7 +35,7 @@
 	<div class="main-content">
 		<main>
 			<div class="banner-image">
-				<img class="img" src="Site Images/startup1.png">
+				<img id="banner" class="img" src="">
 			</div>
 			<div class="submenu">
 				<ul>
@@ -45,9 +45,7 @@
 					<li>
 						<a href="#pitch">Pitch Details</a>
 					</li>
-					<li>
-						<a href="#team">Team</a>
-					</li>
+					
 					<li>
 						<a href="#vid">Images and Videos</a>
 					</li>
@@ -57,13 +55,15 @@
 				<div class="item1">
 					<h3>Short Summary</h3>
 					<div class="summary">
-						<p id="overview">
-								Funding is crucial for all early stage and mature startups.
-								There is no aggregated platform as of now for Startups that they can get access to investors.
-								Many startups die immediate after they start, by the lack of Investors for Funding.
-								Many StartUps exhibitions are going out in our country but it was impossible for everyone to 
-								Reach out there, participating in it, and Getting Investors for Funding.
-						</p>
+						<p id="overview"></p>
+						<h3>Website:</h3>	
+						<p id="website"></p>
+						<h3>Contact:</h3>	
+						<p id="mobile"></p>
+					</div>
+					<h3>Features</h3>
+					<div id="future" class="features">
+						
 					</div>
 				</div>
 				<div class="item2">
@@ -76,23 +76,27 @@
 							</thead>
 							<tr>
 								<td>Minimum</td>
-								<td>50000</td>
+								<td id="minimum_investment"></td>
 							</tr>
 							<tr>
-								<td>Investment</td>
-								<td>50000</td>
+								<td>previous_round_funding</td>
+								<td id="previous_round_funding"></td>
 							</tr>
 							<tr>
-								<td>Previous Round</td>
-								<td>50000</td>
+								<td>Total_raised</td>
+								<td id="total_raised"></td>
+							</tr>
+							<tr>
+								<td>total_raising</td>
+								<td id="total_raising"></td>
 							</tr>
 							<tr>
 								<td>Stage</td>
-								<td>Pre-Development</td>
+								<td id="stage"></td>
 							</tr>
 							<tr>
 								<td>Investor Role</td>
-								<td>Ideal</td>
+								<td id="ideal_investor_role"></td>
 							</tr>
 						</table>
 					</div>
@@ -107,44 +111,29 @@
 								<td>The Business</td>
 								<td>Market Orientation</td>
 								<td>Progess</td>
-								<td>Objective/Features</td>
+
 							</thead>
 							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td id="business"></td>
+								<td id="market"></td>
+								<td id="progress"></td>
 							</tr>
 
 						</table>
 					</div>
 				</div>
-				<div class="item2">
-					<h3>Team</h3>
-					<div class="overview">
-						<table id="team">
-							<thead>
-								<td>Name</td>
-								<td>Position</td>
-								<td>About</td>
-							</thead>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</table>
-					</div>
-				</div>
+			
 			</div>
 			<div class="video">
 				
 					<video controls="" id="vid">
 					<source src="#" type="video/mp4">
-				
-	</video>
+					</video>
 			</div>
 		</main>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="Jquery/userProfile.js"></script>
 </body>
  
