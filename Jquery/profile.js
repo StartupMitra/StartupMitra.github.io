@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    alert("hey Userprifile")
     function getUrl()
     {
         var vars=[],hash;
