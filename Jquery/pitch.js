@@ -3,6 +3,7 @@ $(document).ready(function(){
    user=sessionStorage.getItem("username")
    $('#user').text(user)
    session_title=sessionStorage.getItem("title")
+   
   
        
     $('#save').click(function(){
