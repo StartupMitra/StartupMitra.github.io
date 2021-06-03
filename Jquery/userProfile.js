@@ -71,6 +71,36 @@ $(document).ready(function(){
     
        });
         
+        $('#apply').click(function(){
+           alert("hey")
+           data={"title":profile_name,"request":title}
+           var settings = {
+            "url": "http://127.0.0.1:5000/send_request",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+            
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(data),
+          };
+          
+          
+          $.ajax(settings).done(function (response) {
+              if(response['data']=="1"){
+                  $('#apply').val("applied")
+                  
+              }
+              else{
+            
+                alert("problem while applying")
+              }
+        
+           });
+
+
+        });
+
       
 
     });
