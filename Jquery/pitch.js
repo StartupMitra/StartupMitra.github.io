@@ -43,7 +43,7 @@ $(document).ready(function(){
             {
                alert("data submitted succesfully")
                $('#save').val("saved")
-               window.location.href="file:///F:/StartupMitra/StartupMitra.github/imgnvid.html"
+               window.location.href="imgnvid.html"
                
             }
          else {

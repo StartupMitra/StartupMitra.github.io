@@ -93,7 +93,7 @@ $(document).ready(function(){
                {
                   alert("data sumittd")
                   $('#save').val("saved")
-                  window.location.href="file:///F:/StartupMitra/StartupMitra.github/pitch.html"
+                  window.location.href="pitch.html"
                   
                   
                }

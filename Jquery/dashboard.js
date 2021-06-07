@@ -47,7 +47,7 @@ $(document).ready(function(){
 
   $('#create').click(function(){
 
-    window.location.href="file:///F:/StartupMitra/StartupMitra.github/companyinfo.html"
+    window.location.href="companyinfo.html"
     $("#companyinfo").show()
     $("#pitch").show()
     $("#image").show()

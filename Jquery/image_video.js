@@ -45,7 +45,7 @@ user_data= {
             {
                alert("data submitted succesfully")
                $('#save').val("saved")
-               window.location.href="file:///F:/StartupMitra/StartupMitra.github/dashboard.html"
+               window.location.href="dashboard.html"
             }
          else {
              alert("Data registration is failed")
