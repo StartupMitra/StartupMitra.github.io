@@ -33,3 +33,37 @@
 	background:#ffffff;
 	opacity: .7;
 }
+
+@media only screen and (max-width:960px){
+	
+	.container{
+	display: grid;
+	margin: 20px ;
+}	
+	.container .notification{
+		width: calc(100% / 1 - 20px);
+	}
+}
+@media only screen and (max-width: 768px){
+	
+	.container{
+	display: grid;
+	margin: 20px ;
+}	
+	.container .notification{
+		width: calc(100% / 1 - 20px);
+	}
+}
+@media only screen and (max-width: 560px){
+	
+	.container{
+	display: grid;
+	margin: 20px ;
+}	
+	.container .notification{
+		width: calc(100% / 1 - 20px);
+	}
+}
+
+
+
