@@ -2,6 +2,8 @@ $(document).ready(function(){
       
        
   user=sessionStorage.getItem("username")
+  $('#user').text(user)
+
  /* $('#user').text(user)
        $("#div1").hide();
        //$("#div2").hide();
@@ -91,6 +93,7 @@ $(document).ready(function(){
                {
                   alert("data sumittd")
                   $('#save').val("saved")
+                  window.location.href="file:///F:/StartupMitra/StartupMitra.github/pitch.html"
                   
                   
                }

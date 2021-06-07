@@ -23,35 +23,35 @@
 			 		</a>
 			 	</li>
 
-			 	<li>
+			 	<li id="companyinfo">
 			 		<a href="companyinfo.html">
 			 			<span class="las la-clipboard-list"></span>
 			 			<span>Company Info</span>
 			 		</a>
 			 	</li>
 
-			 	<li>
+			 	<li id="pitch">
 			 		<a href="pitch.html">
 			 			<span class="las la-receipt"></span>
 			 			<span>Pitch</span>
 			 		</a>
 			 	</li>
 
-			 	<li>
+			 	<li id="team">
 			 		<a href="team.html">
 			 			<span class="las la-users"></span>
 			 			<span>Team</span>
 			 		</a>
 			 	</li>
 
-			 	<li>
+			 	<li id="image">
 			 		<a href="imgnvid.html">
 			 			<span class="las la-image"></span>
 			 			<span>Images & Video</span>
 			 		</a>
 			 	</li>
 
-			 	<li> 
+			 	<li id="plan"> 
 			 		<a href="plans.html">
 			 			<span class="las la-ring"></span>
 			 			<span>Plans</span>
@@ -89,7 +89,7 @@
 				
 				<div class="card-single">
 					<div>
-						<h1>54</h1>
+						<h1 id="total"></h1>
 						<span>Total Projects</span>
 					</div>
 					<div>
@@ -99,7 +99,7 @@
 
 				<div class="card-single">
 					<div>
-						<h1>79</h1>
+						<h1 id="progress"></h1>
 						<span>In Progress</span>
 					</div>
 					<div>
@@ -109,7 +109,7 @@
 
 				<div class="card-single">
 					<div>
-						<h1>124</h1>
+						<h1>0</h1>
 						<span>Completed</span>
 					</div>
 					<div>
@@ -119,16 +119,20 @@
 
 				<div class="card-single">
 					<div>
-						<h1>$56K</h1>
+						<h1 id="investment">$56K</h1>
 						<span>Total Investment</span>
 					</div>
 					<div>
 						<span class="lab la-google-wallet"></span>
 					</div>
 				</div>
-			</div>
+			</div></br></br>
+		<center>	<a  id="create" class="notbut" ><input type="button" name="" value="Create Project"></a>
 
+        </center>
 			<div class="recent-grid">
+				
+				
 				
 				<div class="Projects">
 					
@@ -142,24 +146,27 @@
 						<div class="card-body">
 							<div class="table-responsive">
 								
-								<table width="100%">
-									<thead>
+								<table  id="table" width="100%">
+									<thead >
 										<tr>
 											<td>Project Title</td>
 											<td>Domain</td>
-											<td>Amount</td>
-											<td>Time</td>
+											<td>Stage</td>
+											<td>Total_raised</td>
+											<td>Explore</td>
 											
 										</tr>
 									</thead>
-									<tbody>
+								<!----	<tbody>
 										<tr>
 											<td>Web Development</td>
 											<td>IT</td>
-											<td>10000000</td>
-											<td>SystemTime</td>
+											<td>R&D</td>
+											<td>1000000</td>
+											<td><a href="www.google.com">Explore</td>
 										</tr>
-									</tbody>
+											</tbody>
+										-->			
 								</table>
 
 							</div>
@@ -178,7 +185,7 @@
 							<button> See all <span class="las la-arrow-right"></span></button>
 						</div>
 
-						<div class="card-body">
+						<div class="card-body" id="investor">
 							<div class="customer">
 								<div class="info">
 									<img src="Site Images/rushya.jpg" >
